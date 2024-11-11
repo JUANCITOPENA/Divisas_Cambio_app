@@ -40,7 +40,7 @@ Desarrollada en **HTML**, **CSS** y **JavaScript puro**, esta aplicación es lig
    Puedes clonar el repositorio usando `git`:
 
    ```bash
-   git clone https://github.com/TuUsuario/tasas-cambio.git
+   git clone https://github.com/JUANCITOPENA/Divisas_Cambio_app.git
    ```
 
 2. **Abrir la aplicación en tu navegador**:
