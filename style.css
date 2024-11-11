@@ -12,23 +12,17 @@ body {
     min-height: 100vh;
 }
 
-/* Jumbotron Styling (for the Title) */
-.jumbotron {
-    background-color: #004085;
-    color: white;
-    padding: 30px 20px;
-    border-radius: 8px;
-    text-align: center;
-    width: 100%;
-    max-width: 1000px;
-    margin-bottom: 20px;
-}
-
 /* Title Styling */
-.jumbotron h1 {
-    font-size: 32px;
-    margin: 0;
-    font-weight: 600;
+h1 {
+    font-size: 28px;
+    color: #004085;
+    margin-bottom: 20px;
+    text-align: center;
+    position: sticky; /* Mantiene el título fijo */
+    top: 0; /* Fijo en la parte superior */
+    background-color: #f0f2f5; /* Fondo para evitar superposición */
+    z-index: 10; 
+    padding: 10px 0; 
 }
 
 /* Search Container Styling */
@@ -37,11 +31,10 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    position: sticky;
-    top: 50px; /* Adjusts position below the title */
-    background-color: #f0f2f5;
-    z-index: 10;
-    padding: 10px 0;
+    position: sticky; 
+    top: 60px; /* Justo debajo del título */
+    background-color: #f0f2f5; 
+    z-index: 10; 
 }
 
 .search-container input[type="text"] {
@@ -50,13 +43,10 @@ body {
     max-width: 90%;
     border: 1px solid #ddd;
     border-radius: 25px;
-    outline: none;
-    transition: all 0.3s ease;
 }
 
 .search-container input[type="text"]:focus {
     border-color: #007BFF;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 /* Search Icon Styling */
@@ -65,75 +55,80 @@ body {
     font-size: 16px;
     position: absolute;
     right: 15px;
-    color: #666;
-    margin: 20px;
+}
+
+/* Table Container for Scroll */
+.table-container {
+   width: 100%;
+   max-width: 1000px; /* Asegura que la tabla no exceda este ancho */
+   overflow-y: auto; /* Permite desplazamiento vertical */
+   max-height: 400px; /* Ajusta según sea necesario */
+   margin-top: 20px; /* Espacio entre búsqueda y tabla */
+   border-radius: 8px; /* Bordes redondeados para el contenedor */
+   box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Sombra para el contenedor */
 }
 
 /* Table Styling */
 table {
     width: 100%;
-    max-width: 1000px;
-    border-collapse: collapse;
-    margin-top: 0; /* Eliminate additional space for the table */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
+    max-width: 1000px; /* Asegura que la tabla no exceda este ancho */
+    border-collapse: collapse; 
+    background-color: #ffffff; /* Fondo blanco para la tabla */
 }
 
 /* Header Cells */
 thead th {
-    background-color: #004085;
-    color: white;
-    padding: 15px;
-    font-size: 14px;
-    font-weight: 600;
-    position: sticky;
-    top: 110px; /* Space for the search bar */
-    z-index: 9;
+   background-color:#004085; 
+   color:white; 
+   padding :15px; 
+   font-size :14px; 
+   font-weight :bold; 
+   position :sticky; /* Fijo al hacer scroll */
+   top :0; /* Fijo en la parte superior del contenedor de la tabla */
+   z-index :9; /* Asegura que esté por encima del contenido de la tabla */
 }
 
 /* Table Rows and Cells */
 td {
-    padding: 15px;
-    font-size: 14px;
-    color: #333;
-    border-bottom: 1px solid #f0f0f0;
+   padding :15px; 
+   font-size :14px; 
+   color:#333; 
+   border-bottom :1px solid #f0f0f0; 
 }
 
-tr:nth-child(even) {
-    background-color: #f9f9f9;
+tr:nth-child(even) { 
+   background-color:#f9f9f9; 
 }
 
 /* Table Hover Effects */
-tr:hover {
-    background-color: #e0e7ff;
-    color: #004085;
+tr:hover { 
+   background-color:#e0e7ff; 
+   color:#004085; 
 }
 
 /* Flag Image */
-img {
-    width: 48px; /* Increase flag size */
-    height: auto;
-    vertical-align: middle;
+img { 
+   width :48px; /* Aumentar tamaño de bandera */ 
+   height:auto; 
+   vertical-align :middle; 
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 22px;
-    }
-    
-    .search-container input[type="text"] {
-        width: 90%;
-    }
-    
-    th, td {
-        padding: 10px;
-        font-size: 12px;
-    }
+@media (max-width :768px) { 
+   h1 { 
+      font-size :22px; 
+   }
+   
+   .search-container input[type="text"] { 
+      width :90%; 
+   }
+   
+   th, td { 
+      padding :10px; 
+      font-size :12px; 
+   }
 
-    img {
-        width: 40px; /* Smaller flag size for small screens */
-    }
+   img { 
+      width :40px; /* Tamaño más pequeño para pantallas pequeñas */ 
+   }
 }
