@@ -1,1 +1,135 @@
 
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 28px;
+    color: #004085;
+    margin-bottom: 20px;
+    text-align: center;
+    position: sticky; /* Mantiene el título fijo */
+    top: 0; /* Fijo en la parte superior */
+    background-color: #f0f2f5; /* Fondo para evitar superposición */
+    z-index: 10; 
+    padding: 10px 0; 
+}
+
+/* Search Container Styling */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: sticky; 
+    top: 60px; /* Justo debajo del título */
+    background-color: #f0f2f5; 
+    z-index: 10; 
+}
+
+.search-container input[type="text"] {
+    padding: 10px 40px 10px 20px;
+    width: 300px;
+    max-width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #007BFF;
+}
+
+/* Search Icon Styling */
+.search-container::before {
+    content: "🔍";
+    font-size: 16px;
+    position: absolute;
+    right: 15px;
+}
+
+/* Table Container for Scroll */
+.table-container {
+   width: 100%;
+   max-width: 1000px; /* Asegura que la tabla no exceda este ancho */
+   overflow-y: auto; /* Permite desplazamiento vertical */
+   max-height: 400px; /* Ajusta según sea necesario */
+   margin-top: 20px; /* Espacio entre búsqueda y tabla */
+   border-radius: 8px; /* Bordes redondeados para el contenedor */
+   box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Sombra para el contenedor */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    max-width: 1000px; /* Asegura que la tabla no exceda este ancho */
+    border-collapse: collapse; 
+    background-color: #ffffff; /* Fondo blanco para la tabla */
+}
+
+/* Header Cells */
+thead th {
+   background-color:#004085; 
+   color:white; 
+   padding :15px; 
+   font-size :14px; 
+   font-weight :bold; 
+   position :sticky; /* Fijo al hacer scroll */
+   top :0; /* Fijo en la parte superior del contenedor de la tabla */
+   z-index :9; /* Asegura que esté por encima del contenido de la tabla */
+}
+
+/* Table Rows and Cells */
+td {
+   padding :15px; 
+   font-size :14px; 
+   color:#333; 
+   border-bottom :1px solid #f0f0f0; 
+}
+
+tr:nth-child(even) { 
+   background-color:#f9f9f9; 
+}
+
+/* Table Hover Effects */
+tr:hover { 
+   background-color:#e0e7ff; 
+   color:#004085; 
+}
+
+/* Flag Image */
+img { 
+   width :48px; /* Aumentar tamaño de bandera */ 
+   height:auto; 
+   vertical-align :middle; 
+}
+
+/* Responsive Design */
+@media (max-width :768px) { 
+   h1 { 
+      font-size :22px; 
+   }
+   
+   .search-container input[type="text"] { 
+      width :90%; 
+   }
+   
+   th, td { 
+      padding :10px; 
+      font-size :12px; 
+   }
+
+   img { 
+      width :40px; /* Tamaño más pequeño para pantallas pequeñas */ 
+   }
+}
