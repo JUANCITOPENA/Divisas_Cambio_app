@@ -119,13 +119,3 @@ Conéctate conmigo en mis redes sociales para más contenido y actualizaciones:
 
 ---
 
-Espero que esta versión sea más atractiva y cumpla con tus expectativas. Si necesitas más ajustes, ¡hazmelo saber!
-
-Citations:
-[1] https://fastercapital.com/es/tema/usar-emoji-para-mejorar-tus-subt%C3%ADtulos-y-comentarios.html
-[2] https://filmora.wondershare.es/youtube/how-to-add-emojis-youtube-comments.html
-[3] https://www.aluracursos.com/blog/como-escribir-un-readme-increible-en-tu-github
-[4] https://es.linkedin.com/learning/html-esencial-22849768/anadir-emojis-en-html
-[5] https://docs.github.com/es/enterprise-cloud@latest/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-[6] https://www.veed.io/es-ES/herramientas/agregar-emoticonos-a-videos
-[7] https://diegol.top/ecommerce/emojis-iconos-fichas-de-producto/
